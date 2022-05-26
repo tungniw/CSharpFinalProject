@@ -22,6 +22,18 @@ namespace KomodoCafe.Repository
             return _menuDB;
         }
 
+        public KomodoCafeItem GetMenuItemByName(string menuItem)
+        {
+            foreach (KomodoCafeItem x in _menuDB)
+            {
+                if(menuItem.ToUpper() == x.MealName.ToUpper())
+                {
+                    return x;
+                }
+            }
+            return null;
+        }
+
         public bool DeleteItemFromMenu(KomodoCafeItem x)  //Delete
         {
             int totalItemsInDB = _menuDB.Count();

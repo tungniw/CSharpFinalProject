@@ -35,6 +35,11 @@ namespace KomodoCafe.ConsoleApp
             return Convert.ToInt32(Console.ReadLine());
         }
 
+        public decimal GetUserInputDecimal()
+        {
+            return Convert.ToDecimal(Console.ReadLine());
+        }
+
         public void EnterItemToDelete()
         {
             Console.Write("Enter menu item to delete: ");
@@ -83,7 +88,11 @@ namespace KomodoCafe.ConsoleApp
         {
             Console.WriteLine("Enter a Meals Ingredients: ");
         }
-
+        
+                public interface UserInterface
+        {
+            void GetAllMenuItems();
+        }
 
     }
 }
