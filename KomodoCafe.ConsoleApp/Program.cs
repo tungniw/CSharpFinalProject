@@ -1,5 +1,5 @@
 ﻿using KomodoCafe.ConsoleApp;
 
-UserInterface _ui = new UserInterface(console);
+UserInterface _ui = new UserInterface();
 
 _ui.Run();

@@ -9,12 +9,18 @@ namespace KomodoCafe.ConsoleApp
     public class UserInterface
     {
         KomodoCafeRepository _repo = new KomodoCafeRepository();
+        CustomConsole _console = new CustomConsole();
 
         bool isRunning = true;
 
         public void Run()
         {
-            // _repo.
+            _repo.SeedMenuData();
+
+            while (isRunning)
+            {
+                _console.PrintMainMenu();
+            }
         }
     }
 }

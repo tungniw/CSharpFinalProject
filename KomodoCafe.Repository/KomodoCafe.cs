@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace KomodoCafe.Repository
 {
-    public class KomodoCafe
+    public class KomodoCafeItem
     {
         // Properties
         public string MealName { get; set; }
@@ -15,7 +15,7 @@ namespace KomodoCafe.Repository
         public string Ingredients { get; set; }
 
     // Full Constructor
-    public KomodoCafe(string mealName, string mealDescription, int mealNumber, decimal mealPrice, string ingredients)
+    public KomodoCafeItem(string mealName, string mealDescription, int mealNumber, decimal mealPrice, string ingredients)
         {
             MealName = mealName;
             MealDescription = mealDescription;
@@ -25,7 +25,7 @@ namespace KomodoCafe.Repository
         }
 
         // Empty Constructor 
-        public KomodoCafe() {}
+        public KomodoCafeItem() {}
 
     }
 }
